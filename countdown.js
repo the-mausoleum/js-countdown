@@ -34,6 +34,6 @@ $(document).ready(function() {
 			clearInterval(id);
 		}
 				
-		$('#timer').text(day + ':' + hour + ':' + min + ':' + sec);
+		$('#timer').html(day + ':' + hour + ':' + min + ':' + sec);
 	}, 1000);
 });
