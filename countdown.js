@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var endTime = new Date();
-	endTime.setFullYear(2014);
+	endTime.setFullYear(2015);
 	endTime.setMonth(0);
 	endTime.setDate(1);
 	endTime.setHours(0);
@@ -35,5 +35,6 @@ $(document).ready(function() {
 		}
 				
 		$('#timer').html(day + ':' + hour + ':' + min + ':' + sec);
+		$('#date').html("until " + (endTime.getMonth() + 1) + "/" + endTime.getDate() + "/" + endTime.getFullYear());
 	}, 1000);
 });
