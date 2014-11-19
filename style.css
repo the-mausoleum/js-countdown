@@ -1,22 +1,22 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #countdown {
-	margin: 60px auto;
-	width: 960px;
-	text-align: center;
+    margin: 60px auto;
+    width: 960px;
+    text-align: center;
 }
 
 #timer {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 96px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 96px;
 }
 
 #date {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
 }
