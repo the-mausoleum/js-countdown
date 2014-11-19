@@ -3,20 +3,21 @@
     padding: 0;
 }
 
-#countdown {
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.countdown {
     margin: 60px auto;
     width: 960px;
     text-align: center;
 }
 
-#timer {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+.timer {
     font-size: 96px;
 }
 
-#date {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+.date {
     font-size: 48px;
 }
