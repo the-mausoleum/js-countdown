@@ -4,8 +4,8 @@ var Countdown = function () {
     this.then = new Date();
 
     this.then.setFullYear(2015);
-    this.then.setMonth(0);
-    this.then.setDate(1);
+    this.then.setMonth(7);
+    this.then.setDate(24);
     this.then.setHours(0);
     this.then.setMinutes(0);
 
