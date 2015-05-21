@@ -1,13 +1,16 @@
 'use strict';
 
-var Countdown = function () {
+var Countdown = function (timerEle, dateEle, options) {
+    this.timerEle = timerEle;
+    this.dateEle = dateEle;
+
     this.then = new Date();
 
-    this.then.setFullYear(2015);
-    this.then.setMonth(0);
-    this.then.setDate(1);
-    this.then.setHours(0);
-    this.then.setMinutes(0);
+    this.then.setFullYear(options.year);
+    this.then.setMonth(options.month - 1);
+    this.then.setDate(options.day);
+    this.then.setHours(options.hours);
+    this.then.setMinutes(options.minutes);
 
     var self = this;
 
@@ -25,13 +28,11 @@ var Countdown = function () {
             clearInterval(self.counter);
         }
 
-        document.getElementById('timer').innerHTML = days + ':' + pad(hours % 24) + ':' + pad(minutes % 60) + ':' + pad(seconds % 60);
-        document.getElementById('date').innerHTML = 'until ' + (self.then.getMonth() + 1) + '/' + self.then.getDate() + '/' + self.then.getFullYear();
+        document.getElementById(self.timerEle).innerHTML = days + ':' + pad(hours % 24) + ':' + pad(minutes % 60) + ':' + pad(seconds % 60);
+        document.getElementById(self.dateEle).innerHTML = 'until ' + (self.then.getMonth() + 1) + '/' + self.then.getDate() + '/' + self.then.getFullYear();
     }, 1000);
 
     function pad(time) {
         return time < 10 ? '0' + time : time;
     }
 };
-
-var countdown = new Countdown();
