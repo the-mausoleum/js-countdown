@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>js-countdown</title>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,5 +18,14 @@
         <h1 class="timer" id="timer"></h1>
         <h2 class="date" id="date"></h2>
     </div>
+    <script>
+        var countdown = new Countdown('timer', 'date', {
+            year: 2015,
+            month: 8,
+            day: 24,
+            hours: 0,
+            minutes: 0
+        });
+    </script>
 </body>
 </html>
